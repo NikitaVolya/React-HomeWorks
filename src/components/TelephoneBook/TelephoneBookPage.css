@@ -1,0 +1,131 @@
+
+.TelephonesTable {
+    display: table;
+    width: 90%;
+    max-width: 700px;
+    
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    
+    font-family: sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+    margin: 20px auto;
+}
+
+.TelephonesTable .TelephonesTableRow {
+    display: table-row;
+}
+
+.TelephonesTable .TelephonesTableRow:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.TelephonesTable .TelephonesTableRow:hover {
+    background-color: #eef6ff;
+}
+
+.TelephonesTableRow .cell {
+    display: table-cell;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.TelephoneForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+.TelephoneForm input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.TelephoneForm button {
+    padding: 10px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.TelephoneForm button:hover {
+    background-color: #005fa3;
+}
+
+.change-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.change-form-container {
+    background-color: white;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+    max-width: 90vw;
+    font-family: sans-serif;
+}
+
+.TelephoneSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 500px;
+    font-family: sans-serif;
+}
+
+.TelephoneSearch input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.TelephoneSearch input:focus {
+    border-color: #0077cc;
+}
+
+.TelephoneSearch > button {
+    padding: 10px 16px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.TelephoneSearch > button:hover {
+    background-color: #005fa3;
+}
