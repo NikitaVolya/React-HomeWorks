@@ -2,6 +2,8 @@
 import './App.css';
 
 import TelephoneBookPage from './components/TelephoneBook/TelephoneBookPage';
+import EditableRestaurant from './components/Restaurant/EditableRestaurant';
+import Login from './components/Login/Login';
 
 import { useState } from "react";
 
@@ -19,6 +21,30 @@ function HomeworkItem({ title, children }) {
     );
 }
 
+function HomeWork2() {
+    return <HomeworkItem title="Homework 2">
+
+                <h2>Restaurant</h2>
+                <EditableRestaurant fields={{
+                    name: "McDonalds",
+                    address: "Вокзальна площа, 2, Київ, Україна, 01032",
+                    rating: "4,2",
+                    cuisine: "fast food"
+                }}></EditableRestaurant>
+                <hr></hr>
+                <br></br>
+                <h2>Login</h2>
+                <Login login="nikita" password="123456"></Login>
+
+            </HomeworkItem>;
+}
+
+function HomeWork3() {
+    return <HomeworkItem title="Homework 3">
+                <TelephoneBookPage />
+            </HomeworkItem>;
+}
+
 function App() {
   return (
     <div className="homeworksWrapper">
@@ -26,9 +52,9 @@ function App() {
             Home works of <a href="https://github.com/NikitaVolya">NikitaVolia</a>
         </h1>
         <div className="homeworksContainer">
-            <HomeworkItem title="Homework 3">
-                <TelephoneBookPage />
-            </HomeworkItem>
+
+            <HomeWork2></HomeWork2>
+            <HomeWork3></HomeWork3>
         </div>
     </div>
   );  

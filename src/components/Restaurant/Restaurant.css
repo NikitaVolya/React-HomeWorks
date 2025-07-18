@@ -1,0 +1,66 @@
+
+.editable-restaurant {
+    max-width: 450px;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.restaurant-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.restaurant-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.2s ease;
+}
+
+.restaurant-form input:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+.restaurant-form button,
+.editable-restaurant > button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.restaurant-form button:hover,
+.editable-restaurant > button:hover {
+    background-color: #43a047;
+}
+
+.restaurant-card h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.restaurant-card p {
+    margin: 0.25rem 0;
+    color: #555;
+}
+
+.restaurant-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
