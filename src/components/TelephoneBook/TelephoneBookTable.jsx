@@ -53,6 +53,26 @@ function TelephonesTable({ telephoneBook }) {
 
     return <>
         <div className="TelephonesTable">
+            <div className="TelephonesTableRow" key={i++}>
+                <div className="cell">
+                    <b>Firstname</b>
+                </div>
+                <div className="cell">
+                    <b>Lastname</b>
+                </div>
+                <div className="cell">
+                    <b>Email</b>
+                </div>
+                <div className="cell">
+                    <b>PhoneNumber</b>
+                </div>
+                <div className="cell">
+                    
+                </div>
+                <div className="cell">
+                    
+                </div>
+            </div>
             {
                 telephoneBook.GetUsers().map(el => getRow(el))
             }
