@@ -87,12 +87,9 @@ class NoteBook extends React.Component {
             <>
                 <h2 className="form-title">Create a New Note</h2>
                 <NoteCreator tags={this.state.tags} onSubmit={this.pushNote} />
-
                 <hr />
-
                 <div className="notebook-container">
                 
-                {/* Filters */}
                 <div className="filters">
                     <label htmlFor="tagFilter" className="filter-label">
                     Filter by Tags:
@@ -117,7 +114,6 @@ class NoteBook extends React.Component {
                     </select>
                 </div>
 
-                {/* Notes */}
                 <div className="notesWrapper">
                     {filteredNotes.length > 0 ? (
                     filteredNotes.map((note) => (
