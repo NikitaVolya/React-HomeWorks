@@ -1,0 +1,105 @@
+
+.note-book-form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: end; 
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.note-book-form-row input,
+.note-book-form-row textarea,
+.note-book-form-row select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+
+.note-book-form-row input:focus,
+.note-book-form-row textarea:focus,
+.note-book-form-row select:focus {
+    border-color: #007acc;
+    box-shadow: 0 0 4px rgba(0, 122, 204, 0.5);
+}
+
+
+.note-book-form-row textarea {
+    width: 200px;
+    height: 60px;
+    resize: none; 
+}
+
+
+.note-book-form-row select {
+    width: 200px;
+    height: 79px;
+}
+
+
+.note-book-form-row button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.note-book-form-row button:hover {
+    background-color: #005f99;
+}
+
+.notebook-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-label {
+  font-weight: bold;
+}
+
+.tag-select {
+  min-width: 180px;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tag-select option {
+  padding: 4px;
+}
+
+.notesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.empty-message {
+  color: #666;
+  font-style: italic;
+  margin: 0;
+}
+
+.form-title {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
