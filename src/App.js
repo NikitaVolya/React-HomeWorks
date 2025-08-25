@@ -7,6 +7,7 @@ import Login from './components/Login/Login';
 
 import { useState } from "react";
 import NoteBook from './components/NoteBook/NoteBook';
+import LibraryPage from './components/Library/LibraryPage';
 
 
 function HomeworkItem({ title, children }) {
@@ -50,6 +51,10 @@ function App() {
 
             <HomeworkItem title="Homework 3">
                 <TelephoneBookPage />
+            </HomeworkItem>
+
+            <HomeworkItem title="Модуль 9. Side effects. Context API">
+                <LibraryPage></LibraryPage>
             </HomeworkItem>
 
             <HomeworkItem title="Модуль 12. Класові компоненти">

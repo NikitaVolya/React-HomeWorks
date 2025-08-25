@@ -1,0 +1,121 @@
+
+.toggle-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #007acc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 5px;
+}
+
+.toggle-btn:hover {
+  background: #005f99;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.book-form {
+  width: 90%;
+  max-width: 450px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: black;
+}
+
+.book-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #00c3ff;
+}
+
+.book-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 6px;
+}
+
+.book-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #007acc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.book-form input:focus {
+  border-color: #00c3ff;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.book-form button {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.book-form button[type="submit"] {
+  background: #007acc;
+  color: white;
+}
+
+.book-form button[type="submit"]:hover {
+  background: #005f99;
+}
+
+.cancel-btn {
+  background: #444;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #666;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
