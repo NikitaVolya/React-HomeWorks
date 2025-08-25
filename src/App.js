@@ -8,6 +8,7 @@ import Login from './components/Login/Login';
 import { useState } from "react";
 import NoteBook from './components/NoteBook/NoteBook';
 import LibraryPage from './components/Library/LibraryPage';
+import HomeWork2 from './components/HomeWork2/HomeWork2';
 
 
 function HomeworkItem({ title, children }) {
@@ -31,7 +32,11 @@ function App() {
         </h1>
         <div className="homeworksContainer">
 
-            <HomeworkItem title="Homework 2">
+            <HomeworkItem title="Модуль 5. Вступ до функціональних компонентів. Частина 1">
+                <HomeWork2></HomeWork2>
+            </HomeworkItem>
+
+            <HomeworkItem title="Homework 3">
 
                 <h2>Restaurant</h2>
                 <EditableRestaurant fields={{
@@ -49,7 +54,7 @@ function App() {
 
             </HomeworkItem>
 
-            <HomeworkItem title="Homework 3">
+            <HomeworkItem title="Homework 4">
                 <TelephoneBookPage />
             </HomeworkItem>
 
