@@ -1,0 +1,35 @@
+.blog-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    font-family: Georgia, serif;
+}
+
+.blog-title {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.blog-date {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.blog-text {
+    margin: 15px 0;
+}
+
+.blog-tags {
+    display: flex;
+    gap: 8px;
+}
+
+.blog-tag {
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}

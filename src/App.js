@@ -10,6 +10,7 @@ import NoteBook from './components/NoteBook/NoteBook';
 import LibraryPage from './components/Library/LibraryPage';
 import HomeWork2 from './components/HomeWork2/HomeWork2';
 import Article from './components/Article/Article';
+import Modul8 from './components/Modul8/Modul8';
 
 
 function HomeworkItem({ title, children }) {
@@ -87,6 +88,10 @@ function App() {
 
             <HomeworkItem title="Homework 4">
                 <TelephoneBookPage />
+            </HomeworkItem>
+
+            <HomeworkItem title="Модуль 8. Фрагменти. Портали. Refs">
+                <Modul8></Modul8>
             </HomeworkItem>
 
             <HomeworkItem title="Модуль 9. Side effects. Context API">
