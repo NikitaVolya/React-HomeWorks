@@ -8,6 +8,7 @@ import Login from './components/Login/Login';
 import { useState } from "react";
 import NoteBook from './components/NoteBook/NoteBook';
 import LibraryPage from './components/Library/LibraryPage';
+import HomeWork1 from './components/HomeWork1/HomeWork1';
 import HomeWork2 from './components/HomeWork2/HomeWork2';
 import Article from './components/Article/Article';
 import Modul8 from './components/Modul8/Modul8';
@@ -33,6 +34,10 @@ function App() {
             Home works of <a href="https://github.com/NikitaVolya">NikitaVolia</a>
         </h1>
         <div className="homeworksContainer">
+            
+            <HomeworkItem title="Модуль 4. Вступ до React">
+                <HomeWork1></HomeWork1>
+            </HomeworkItem>
 
             <HomeworkItem title="Модуль 5. Вступ до функціональних компонентів. Частина 1">
                 <HomeWork2></HomeWork2>
